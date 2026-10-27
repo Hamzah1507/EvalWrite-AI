@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F7F7F2;
+  --foreground: #26332F;
+  --card-bg: #FFFFFF;
+  --text-primary: #26332F;
+  --text-muted: #68756F;
+  --accent-primary: #527C70;
+  --accent-hover: #3F655A;
+  --accent-light: #EEF3F0;
+  --border-subtle: #E4E7E1;
+  --border-accent: #D5DFDA;
+  --status-success: #48735B;
+  --status-warning: #B88738;
+  --status-error: #A84B46;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: #527C70;
+  --color-brand-hover: #3F655A;
+  --color-brand-light: #EEF3F0;
+  --color-brand-border: #D5DFDA;
+  --color-card-border: #E4E7E1;
+  --color-muted-text: #68756F;
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Restrained scrollbar for academic SaaS aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5DFDA;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #68756F;
+}
+
